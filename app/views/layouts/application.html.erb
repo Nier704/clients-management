@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>ClientsManagement</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
+    <%= javascript_importmap_tags %>
+  </head>
+
+  <body style='font-family: system-ui; overflow-x: hidden; padding: 0; margin: 0; box-sizing: border-box; outline: none; font-size: 20px;'>
+    <%= render partial: 'components/header' %>
+    <main
+      style='padding-top: 75px; display: flex; justify-content: center; align-items: center;'
+    >
+      <%= yield %>
+    </main>
+  </body>
+</html>
