@@ -13,8 +13,9 @@
   <body style='font-family: system-ui; overflow-x: hidden; padding: 0; margin: 0; box-sizing: border-box; outline: none; font-size: 20px;'>
     <%= render partial: 'components/header' %>
     <main
-      style='padding-top: 75px; display: flex; justify-content: center; align-items: center;'
+      style='padding-top: 75px; display: flex; flex-direction: column; justify-content: center; align-items: center;'
     >
+      <%= render partial: 'components/flash' %>
       <%= yield %>
     </main>
   </body>
